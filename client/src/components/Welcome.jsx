@@ -40,7 +40,7 @@ const Welcome = () => {
                     <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
                         Join The <br /> Energy Chain
                     </h1>
-                    <p className="text-left mt-5 text-white font-light md:w-9/12 w-11/12 text-base">
+                    <p className="text-left mt-5 text-black font-light md:w-9/12 w-11/12 text-base">
                         Earn Voltchain Token by producing energy. Buy and sell energy tokens.
                     </p>
                     {!currentAccount && (
