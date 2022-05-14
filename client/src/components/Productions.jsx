@@ -15,7 +15,7 @@ const ProductionCard = ({ userAddress, timestamp, amount }) => {
         ">
             <div className="flex flex-col items-center w-full mt-3">
                 <div className="w-full mb-6 p-2">
-                    <a href={`https://ropsten.etherscan.io/address/${userAddress}`} target="_blank" rel="noopener noreferrer">
+                    <a href={`https://rinkeby.etherscan.io/address/${userAddress}`} target="_blank" rel="noopener noreferrer">
                         <p className="text-white text-base">Producer: {shortenAddress(userAddress)}
                         </p>
                     </a>

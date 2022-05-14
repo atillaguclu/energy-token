@@ -21,6 +21,7 @@ export const EnergyTokenProvider = ({ children }) => {
     const [isLoading, setIsLoading] = useState(false);
     const [productionCount, setProductionCount] = useState(localStorage.getItem('productionCount'));
     const [productions, setProductions] = useState([])
+    const [balance, setBalance] = useState("")
 
     const handleChange = (e, name) => {
         setFormData((prevState) => ({ ...prevState, [name]: e.target.value }));
@@ -47,6 +48,14 @@ export const EnergyTokenProvider = ({ children }) => {
         }
     }
 
+    // const getBalance = async () => {
+    //     const energyTokenContract = getEthereumContract();
+
+    //     const userBalance = await energyTokenContract.balanceOf(currentAccount);
+    //     setBalance(userBalance);
+
+    // }
+
     const checkIfWalletIsConnect = async () => {
 
         try {
@@ -58,6 +67,7 @@ export const EnergyTokenProvider = ({ children }) => {
                 setCurrentAccount(accounts[0]);
 
                 getAll();
+                getBalance();
             } else {
                 console.log("No accounts found");
             }
@@ -102,7 +112,7 @@ export const EnergyTokenProvider = ({ children }) => {
     }, [])
 
     return (
-        <EnergyTokenContext.Provider value={{ connectWallet, currentAccount, formData, setFormData, handleChange, productions, isLoading }}>
+        <EnergyTokenContext.Provider value={{ connectWallet, currentAccount, balance, formData, setFormData, handleChange, productions, isLoading }}>
             {children}
         </EnergyTokenContext.Provider >
     );

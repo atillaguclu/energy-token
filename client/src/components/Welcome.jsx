@@ -23,7 +23,7 @@ const Input = ({ placeholder, name, type, value, handleChange }) => (
 
 const Welcome = () => {
 
-    const { connectWallet, currentAccount, formData, handleChange, isLoading } = useContext(EnergyTokenContext);
+    const { connectWallet, currentAccount, balance, formData, handleChange, isLoading } = useContext(EnergyTokenContext);
 
     const handleSubmit = (e) => {
         const { addressTo, amount, state } = formData;
@@ -82,7 +82,7 @@ const Welcome = () => {
                             </div>
                             <div>
                                 <p className='text-white text-sm'>
-                                    Balance: 42
+                                    {balance}
                                 </p>
                                 <p className="text-white font-light text-sm">
                                     {shortenAddress(currentAccount)}
