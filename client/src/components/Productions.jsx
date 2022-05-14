@@ -16,10 +16,10 @@ const ProductionCard = ({ userAddress, timestamp, amount }) => {
             <div className="flex flex-col items-center w-full mt-3">
                 <div className="w-full mb-6 p-2">
                     <a href={`https://ropsten.etherscan.io/address/${userAddress}`} target="_blank" rel="noopener noreferrer">
-                        <p className="text-white text-base">From: {shortenAddress(userAddress)}
+                        <p className="text-white text-base">Producer: {shortenAddress(userAddress)}
                         </p>
                     </a>
-                    <p className="text-white text-base">Amount: {amount} ETH
+                    <p className="text-white text-base">Amount: {amount} VCT (kW)
                     </p>
                 </div>
                 <div className="bg-black p-3 px-5 w-max rounded-3xl -mt-5 shadow-2xl">
@@ -34,7 +34,7 @@ const ProductionCard = ({ userAddress, timestamp, amount }) => {
 const Productions = () => {
     const { currentAccount, productions } = useContext(EnergyTokenContext);
     return (
-        <div className="flex w-full justify-center items-center 2xl:px-20 gradient-bg-transactions">
+        <div className="flex w-full justify-center items-center 2xl:px-20">
             <div className="flex flex-col md:p-12 py-12 px-4">
                 {currentAccount ? (
                     <h3 className="text-white text-3xl text-center my-2">

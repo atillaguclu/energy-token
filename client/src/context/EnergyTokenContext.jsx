@@ -35,7 +35,7 @@ export const EnergyTokenProvider = ({ children }) => {
 
             const structuredProductions = availableProductions.map((production) => ({
                 userAddress: production.userAddress,
-                amount: parseInt(production.energyProduced._hex) / (10 ** 18),
+                amount: parseInt(production.energyProduced._hex), // / (10 ** 18) for big number decimals
                 timestamp: new Date(production.timestamp.toNumber() * 1000).toLocaleString()
             }))
 

@@ -14,9 +14,8 @@ body {
 }
 
 .gradient-bg-welcome {
-    background-color: #ff9eda;
-    background-image: linear-gradient(180deg, #ff9eda 14%, #8effdd 100%);
-
+    background: rgb(255, 158, 218);
+    background: linear-gradient(180deg, rgba(255, 158, 218, 1) 0%, rgba(160, 230, 255, 1) 48%, rgba(142, 255, 221, 1) 100%);
 }
 
 .gradient-bg-services {
