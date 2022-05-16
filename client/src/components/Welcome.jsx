@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { AiFillPlayCircle } from "react-icons/ai";
 import { SiEthereum } from 'react-icons/si';
 import { BsInfoCircle } from 'react-icons/bs';
+import { GiElectric } from "react-icons/gi";
 
 import { Loader } from './';
 import ButtonGroup from "./ButtonGroup";
@@ -37,11 +38,11 @@ const Welcome = () => {
         <div className='flex w-full justify-center'>
             <div className="flex mf:flex-row flex-col items-start justify-between md:p-20 py-12 px-4">
                 <div className="flex flex-1 justify-start flex-col mf:mr-10">
-                    <h1 className="text-3xl sm:text-5xl text-white text-gradient py-1">
+                    <h1 className="text-3xl sm:text-5xl text-gradient py-1">
                         Join The <br /> Energy Chain
                     </h1>
                     <p className="text-left mt-5 text-black font-light md:w-9/12 w-11/12 text-base">
-                        Earn Voltchain Token by producing energy. Buy and sell energy tokens.
+                        Earn Voltchain Token by producing energy. Buy and sell energy with Voltchain Token.
                     </p>
                     {!currentAccount && (
                         <button
@@ -76,7 +77,7 @@ const Welcome = () => {
                         <div className="flex justify-between flex-col w-full h-full">
                             <div className="flex justify-between items-start">
                                 <div className="w-10 h-10 rounded-full border-2 border-white flex justify-center items-center">
-                                    <SiEthereum fontSize={21} color='#fff' />
+                                    <GiElectric fontSize={21} color='#fff' />
                                 </div>
                                 <BsInfoCircle fontSize={17} color='#fff' />
                             </div>

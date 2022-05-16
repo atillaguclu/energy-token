@@ -33,7 +33,7 @@ body {
 }
 
 .blue-glassmorphism {
-    background: rgba(255, 219, 239, 0.514);
+    background: rgba(253, 238, 246, 0.514);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
@@ -51,7 +51,7 @@ body {
 }
 
 .pink-glassmorphism {
-    background: rgba(255, 228, 243, 0.815);
+    background: rgba(253, 238, 246, 0.514);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(5px);
@@ -68,11 +68,14 @@ body {
         radial-gradient(at 71% 58%, hsla(132, 69%, 81%, 1) 0px, transparent 50%);
 }
 
+.text-shadow {
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 0px rgb(250, 65, 145, 1);
+}
+
 .text-gradient {
-    background-color: rgb(0, 0, 0);
-    background-image: radial-gradient(at 4% 36%, rgb(0, 0, 0) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(84, 221, 187) 0, transparent 50%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 0px rgb(250, 65, 145, 1);
 }
 
 @tailwind base;
